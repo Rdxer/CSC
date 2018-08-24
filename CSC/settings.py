@@ -25,7 +25,10 @@ SECRET_KEY = '8#4wddede&3=)sz-!r25-xe=c02%l6(wp-itzhbyjm6=&pxgif'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '10.200.7.156',
+    '0.0.0.0',
+]
 
 
 # Application definition
@@ -119,3 +122,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+CORS_ORIGIN_WHITELIST = (
+    '0.0.0.0:9000',
+    'localhost:9000',
+)
