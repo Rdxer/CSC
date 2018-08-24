@@ -26,6 +26,7 @@ SECRET_KEY = '8#4wddede&3=)sz-!r25-xe=c02%l6(wp-itzhbyjm6=&pxgif'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '127.0.0.1',
     '10.200.7.156',
     '0.0.0.0',
 ]
@@ -40,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'model'
 ]
 
 MIDDLEWARE = [
